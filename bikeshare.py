@@ -93,17 +93,13 @@ def time_stats(df):
     start_time = time.time()
 
     # display the most common month
-    most_common_month = df['month name'].mode()[0]
-    print('most common month: ', most_common_month)
+    print('most common month: ', df['month name'].mode()[0])
 
     # display the most common day of week
-    most_common_weekday = df['day of week'].mode()[0]
-    print('most common weekday: ', most_common_weekday)
+    print('most common weekday: ', df['day of week'].mode()[0])
 
     # display the most common start hour
-
-    most_common_weekday = df['hour'].mode()[0]
-    print('most common hour: ', most_common_weekday)
+    print('most common hour: ', df['hour'].mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -116,12 +112,10 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    most_used_start_station = df['Start Station'].mode()[0]
-    print('most commonly used start station: ', most_used_start_station)
+    print('most commonly used start station: ', df['Start Station'].mode()[0])
 
     # display most commonly used end station
-    most_used_end_station = df['End Station'].mode()[0]
-    print('most commonly used end station: ', most_used_end_station)
+    print('most commonly used end station: ', df['End Station'].mode()[0])
 
     # display most frequent combination of start station and end station trip
     if 'Start Station' in df:
@@ -182,14 +176,11 @@ def user_stats(df):
 
     #counting the earliest birth year, latest birth year and most common birth year
     if 'Birth Year' in df:
-        earliest_birth_year = df['Birth Year'].min()
-        print('earliest birth year is: ', earliest_birth_year)
+        print('earliest birth year is: ', df['Birth Year'].min())
 
-        latest_birth_year = df['Birth Year'].max()
-        print('latest birth year is: ', latest_birth_year)
+        print('latest birth year is: ', df['Birth Year'].max())
 
-        count_birth_year = df['Birth Year'].mode()[0]
-        print('most frequent birth year is: ', count_birth_year)
+        print('most frequent birth year is: ', df['Birth Year'].mode()[0])
     else:
         print('there is no data for birth year')
         
