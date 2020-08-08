@@ -143,14 +143,14 @@ def trip_duration_stats(df):
 
     # display total travel time
     if 'Trip Duration' in df:
-        total_travel_time = sum(df['Trip Duration'])
+        total_travel_time = sum(df['Trip Duration']) #calculating the total from trip duration
         print('total travel time is:' , total_travel_time)
     else:
         print('there is no data for travel time')
         
     # display mean travel time
     if 'Trip Duration' in df:
-        mean_travel_time = df['Trip Duration'].mean()
+        mean_travel_time = df['Trip Duration'].mean() #calculating the mean from trip duration
         print('mean travel time is: ' , mean_travel_time)
     else:
         print('there is no data for travel time')
