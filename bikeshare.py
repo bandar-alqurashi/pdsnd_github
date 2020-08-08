@@ -176,14 +176,11 @@ def user_stats(df):
 
     #counting the earliest birth year, latest birth year and most common birth year
     if 'Birth Year' in df:
-        earliest_birth_year = df['Birth Year'].min()
-        print('earliest birth year is: ', earliest_birth_year)
+        print('earliest birth year is: ', df['Birth Year'].min())
 
-        latest_birth_year = df['Birth Year'].max()
-        print('latest birth year is: ', latest_birth_year)
+        print('latest birth year is: ', df['Birth Year'].max())
 
-        count_birth_year = df['Birth Year'].mode()[0]
-        print('most frequent birth year is: ', count_birth_year)
+        print('most frequent birth year is: ', df['Birth Year'].mode()[0])
     else:
         print('there is no data for birth year')
         
