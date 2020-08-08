@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+21/7/2020
 
 ### Project Title
-Replace the Project Title
+bikeshare data explore
 
 ### Description
-Describe what your project is about and what it does
+allow user to explore bikeshare data
 
 ### Files used
-Include the files used
+bikeshare.py, chicago.csv, washington.csv, new-york-city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+used these resources for datetime:
 
+- https://stackoverflow.com/questions/17134716/convert-dataframe-column-type-from-string-to-datetime-dd-mm-yyyy-format
+
+- https://docs.python.org/3/library/datetime.html
+
+- https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+
+- https://stackoverflow.com/questions/6557553/get-month-name-from-number
