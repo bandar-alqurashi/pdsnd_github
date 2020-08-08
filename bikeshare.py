@@ -69,13 +69,13 @@ def load_data(city, month, day):
     if day.lower() != 'all':
         weekday_dict = {'monday':0,"tuesday":1,"wednesday":2,"thursday":3,"friday":4,"saturday":5,"sunday":6}
         day = weekday_dict[day]
-
+    
     df = pd.read_csv (r'C:\Users\kntr\Udacity\{}.csv'.format(city.replace(" ","_"))) #reading the csv file
     df['Start Time'] = pd.to_datetime(df['Start Time']) #converting the column to datetime format
 
-    df['day of week'] = df['Start Time'].dt.day_name()
-    df['hour'] = df['Start Time'].dt.hour
-    df['month name'] = df['Start Time'].dt.month_name()
+    df['day of week'] = df['Start Time'].dt.day_name() #picking the day of the week from start time column
+    df['hour'] = df['Start Time'].dt.hour #picking the hour from start time column
+    df['month name'] = df['Start Time'].dt.month_name() #picking the month name from start time column
     
     if month != 'all':
         df = df[df['Start Time'].dt.month == month] #filtering the month
