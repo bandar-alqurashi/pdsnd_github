@@ -5,7 +5,7 @@
 bikeshare data explore
 
 ### Description
-allow user to explore bikeshare data using filters such as date and city
+allow user to explore bikeshare data using filters such as date and city, and showcasing different statistics.
 
 ### Files used
 bikeshare.py, chicago.csv, washington.csv, new-york-city.csv
